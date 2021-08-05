@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.lbt {
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    text-align: center;
+}
+
+ul li {
+    width: 100px;
+    height: 50px;
+    background-color: pink;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+ol {
+    text-align: center;
+    height: 250px;
+}
+
+ol li {
+    width: 300px;
+    height: 200px;
+    background-color: skyblue;
+    line-height: 200px;
+    position: absolute;
+    display: none;
+}
+
+.lbt>ul>li.active {
+    background-color: red;
+}
+
+.lbt>ol>li.active {
+    display: block;
+}
